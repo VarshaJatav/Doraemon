@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            background-image: linear-gradient(to right,rgb(193, 140, 226),rgb(58, 166, 243));
+        }
+        .full{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 130px;
+            
+        }
+
+        .h1{
+            width: 210px;
+            height: 160px;
+            background-color: blue;
+            border: 2px solid black;
+            border-radius: 95px 95px 100px 100px;
+            padding-top: 40px;
+            margin-right: 7px;
+
+        }
+
+        .h1>div{
+            width: 170px;
+            height: 160px;
+            background-color: white;
+            border: 2px solid black;
+            border-radius: 90px 90px 100px 100px;
+            display: block;
+            margin: auto;
+        }
+
+        .eye{
+            display: flex;
+            justify-content: center;
+            border: none;
+        }
+
+        .eye>div{
+            width: 50px;
+            height: 65px;
+            background-color: white;
+            border: 2px solid black;
+            border-radius: 50%;
+            margin: -25px 0px 0px 0px;
+            
+        }
+
+        .eye>div>div{
+            width: 10px;
+            height: 15px;
+            background-color: black;
+            border: 2px solid black;
+            border-radius: 50%;
+            display: block;
+            margin: auto;
+            margin-top: 45px;
+
+        }
+        .nose{
+            width: 20px;
+            height: 20px;
+            background-color: red;
+            display: block;
+            margin: auto;
+            border-radius: 50%;
+            border: 2px solid black;
+            margin-top: -15px;
+        }
+
+        .mid{
+            display: flex;
+        }
+
+
+        .mos>div{
+            width: 50px;
+            height: 1px;
+            background-color: black;
+            margin: 7px;
+        }
+
+        .a1{
+            transform: skew(5deg,6deg);
+        }
+        .a3{
+            transform: skew(-5deg,-6deg);
+        }
+
+        .line{
+            border: 2px solid black;
+            width: 1px;
+            height: 40px;
+            background-color: black;
+            display: block;
+            margin: auto;
+        }
+        .mouth{
+            width: 80px;
+            height: 40px;
+            background-color: red;
+            border: 2px solid black;
+            border-radius: 0px 0px 150px 150px;
+            display: block;
+            margin: auto;
+        }
+
+        .mouth>div{
+            width: 45px;
+            height: 30px;
+            background-color: rgb(143, 16, 16);
+            border-radius: 150px 150px 150px 150px;
+            display: block;
+            margin: auto;
+            margin-top: 10px;
+
+
+        }
+
+
+        .belt{
+            width: 140px;
+            height: 14px;
+            background-color: red;
+            border: 2px solid black;
+            margin-top: -18px;
+            margin-right: 10px;
+            z-index: 5;
+        }
+
+        .belt>div{
+            width: 25px;
+            height: 25px;
+            background-color: yellow;
+            border: 2px solid black;
+            border-radius: 50px;
+            position: relative;
+            display: block;
+            margin: auto;
+            z-index: 2;
+        }
+
+        .belt>div>div{
+            width: 23px;
+            height: 1px;
+            background-color: black;
+            border: 2px solid black;
+            display: flex;
+            margin-top: 50%;
+        }
+        .middle{
+            display: flex;
+        }
+        .body{
+            width: 150px;
+            height: 150px;
+            background-color: blue;
+            border: 2px solid black;
+            border-radius: 20px;
+            margin-left: 12px;
+        }
+        .body>div{
+            border: 2px solid black;
+            width: 110px;
+            height: 100px;
+            background-color: white;
+            border-radius: 0px 0px 50px 50px;
+            display: block;
+            margin: auto;
+        }
+        .body>div>div{
+            border: 2px solid black;
+            width: 80px;
+            height: 40px;
+            background-color: white;
+            border-radius: 0px 0px 50px 50px;
+            display: block;
+            margin: auto;
+            margin-top: 40px;
+
+        }
+        
+        .hand1 :nth-child(1){
+            position: relative;
+            width: 60px;
+            height: 110px;
+            background-color: blue;
+            border-radius: 50px 0px 10px 50px;
+            transform: skew(-15deg,-18deg);
+            z-index: 1;
+            margin-top: 8px;
+            margin-right: -18px;
+
+        }
+
+        .hand2 :nth-child(1){
+            width: 60px;
+            height: 110px;
+            background-color: blue;
+            transform: skew(15deg,18deg);
+            border-radius: 0px 50px 50px 0px;
+            margin-left: -6px;
+            margin-top: 5px;
+
+        }
+
+        .palm{
+            position: relative;
+            width: 55px;
+            height: 55px;
+            border: 2px solid black;
+            background-color: white;
+            border-radius: 50%;
+            margin-top: -50px;
+            margin-left: -14px;
+            z-index: 2;
+            
+
+        }
+
+        .hand2 :nth-child(2){
+            margin-left: 7px;
+        }
+
+
+        .foot{
+            display: flex;
+            margin-top: -30px;
+        }
+
+        .foot>div{
+            width: 90px;
+            height: 60px;
+            border: 2px solid black;
+            border-radius: 48%;
+            background-color: white;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="full">
+        <div class="h1">
+            <div>
+                <div class="eye">
+                    <div>
+                        <div></div>
+                    </div>
+                    <div>
+                        <div></div>
+                    </div>
+                </div>
+                <div class="nose"></div>
+                <div class="mid">
+                    <div class="mos">
+                        <div class="a1"></div>
+                        <div class="a2"></div>
+                        <div class="a3"></div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="mos">
+                        <div class="a3"></div>
+                        <div class="a2"></div>
+                        <div class="a1"></div>
+                    </div>
+                </div>
+                <div class="mouth">
+                    <div></div>
+                </div>
+            </div>
+
+        </div>
+        <div class="belt">
+            <div>
+                <div></div>
+            </div>
+        </div>
+
+        <div class="middle">
+            <div class="hand1">
+                <div></div>
+                <div class="palm"></div>
+            </div>
+            <div class="body">
+                <div>
+                    <div></div>
+                </div>
+            </div>
+            <div class="hand2">
+                <div></div>
+                <div class="palm"></div>
+            </div>
+            
+        </div>
+        <div class="foot">
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</body>
+</html>
